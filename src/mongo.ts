@@ -1,4 +1,3 @@
-//mongo.ts
 import { Db, MongoClient } from "mongodb";
 
 

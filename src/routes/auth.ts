@@ -1,4 +1,3 @@
-// routes/auth.ts
 import { Router } from "express";
 import { connectMongoDB, getDb } from "../mongo";
 import { ObjectId } from "mongodb";
@@ -30,7 +29,7 @@ router.get("/", async (req, res)=>{
 });
 
 
-// POST /auth/register  { username, password }
+// POST /auth/register
 router.post("/register", async (req, res) => {
   try {
     const { email, password } = req.body as { email: string; password?: string };
@@ -57,7 +56,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// POST /auth/login  { username, password }
+// POST /auth/login
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body as { email?: string; password?: string };

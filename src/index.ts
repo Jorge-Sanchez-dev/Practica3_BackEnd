@@ -1,4 +1,3 @@
-//index.ts
 import express from "express";
 import { connectMongoDB } from "./mongo";
 import rutasAuth from "./routes/auth";
